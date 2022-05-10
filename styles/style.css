@@ -1,7 +1,32 @@
 body {
-    background-color: #1C1C26;
-    color: #FFFFFF;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 200%;
-    text-align: center;
+    margin: 0px;
+    background: #1b1b1b;
+    color: white;
 }
+
+.nav {
+    display: flex;
+    position: fixed;
+    background-color: #1b1b1b;
+    background: grey;
+    width: 100%;
+}
+
+.nav-left {
+    flex: left;
+}
+
+.nav-right {
+    flex : right;
+    font-size: large;
+}
+
+.nav-right a {
+    color: white;
+    transition-duration: 0.2s;
+}
+
+.nav-right a:hover {
+    color: yellow;
+}
+
