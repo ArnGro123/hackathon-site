@@ -1,5 +1,6 @@
 body {
-    margin: 0px;
+    margin: 0;
+    padding: 0;
     background: #1b1b1b;
     color: white;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -137,10 +138,126 @@ body {
 .content-participants-title {
     text-align: center;
     font-size: 30px;
+    margin-bottom: 0px;
 }
 
 .content-participants-content {
     text-align: center;
     font-size: 35px;
     font-weight: regular;
+    margin-bottom: 50px;
+}
+
+.tables {
+    display: flex;
+    flex: center;
+}
+
+.tables-separator-rect-left {
+    height: 500px;
+    width: 550px;
+    background-color: white;
+}
+
+.tables-separator-triangle {
+    width: 0px;
+    height: 0px;
+    border-left: 0px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 500px solid white;
+}
+
+.tables-schedule {
+    display: flex;
+    flex: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: #1b1b1b;
+}
+
+.tables-schedule table {
+    display: flex;
+    flex: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.tables-schedule tr, td {
+    height: 100px;
+    width: 200px;
+    border: 1px solid;
+    border-collapse: collapse;
+}
+
+.tables-separator-rect-right {
+    display: flex;
+    flex: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 600px;
+    height: 500px;
+}
+
+.tables-prizes table {
+    display: flex;
+    flex: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.tables-prizes tr, td {
+    height: 100px;
+    width: 200px;
+    border: 1px solid;
+    border-collapse: collapse;
+}
+
+/*
+.register {
+    display: flex;
+    flex: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+    margin: 75px;
+}
+
+.register-button button {
+    font-size: 25px;
+    background-color: #fcfca0;
+    height: 100px;
+    width: 200px;
+    border: none;
+    border-radius: 10px;
+    transition-duration: 0.3s;
+}
+
+.register-button button:hover {
+    background-color: #ffff5b;
+}
+*/
+
+footer {
+    display: flex;
+    flex: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(14, 13, 13);
+}
+
+.footer-title {
+    font-size: 30px;
+}
+
+.footer-content {
+    display: flex;
+    flex: right;
+    flex-direction: column;
+    font-size: 20px;
 }
