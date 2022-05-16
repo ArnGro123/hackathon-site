@@ -121,10 +121,10 @@ body {
 }
 
 .content-explanation-p span:hover {
-    color: cyan;
-    text-shadow: 0 0 7px rgb(18, 253, 253);
+    color: #bf7ff7;
+    text-shadow: 0 0 7px #8e4ec6;
     text-decoration: underline;
-    text-decoration-color: cyan;
+    text-decoration-color: #a751f2;
     font-weight: 500;
 }
 
@@ -200,21 +200,6 @@ body {
     text-align: center;
     width: 600px;
     height: 500px;
-}
-
-.tables-prizes table {
-    display: flex;
-    flex: center;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.tables-prizes tr, td {
-    height: 100px;
-    width: 200px;
-    border: 1px solid;
-    border-collapse: collapse;
 }
 
 /*
