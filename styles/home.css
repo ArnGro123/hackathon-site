@@ -6,223 +6,79 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.nav {
-    display: flex;
+a {
+    text-decoration: none;
 }
 
-.nav-left {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 15px;
-}
 
-.nav-right {
+.nav-bar {
     display: flex;
+    flex: right;
     justify-content: right;
-    width: 100%;
-    padding: 20px;
-    padding-right: 100px;
-    gap: 50px;
-    font-size: 25px;
-    font-weight: bold;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
 }
 
-.nav-right a {
+.nav-bar a {
+    font-size: 20px;
+    font-weight: 600;
     color: white;
-    transition-duration: 0.2s;
 }
 
-.nav-right a:hover {
-    color: rgb(252, 255, 241);
-    text-shadow: 
-        0 0 5px #ffff2f,
-        0 0 10px #ffff5b,
-        0 0 20px #ffff5b,
-        0 0 60px #fcfca0;
+.nav-bar a:hover {
+    transition-duration: 0.3s;
+    color: #F9F871;
 }
 
 .title {
     display: flex;
-    flex: left;
-    text-align: center;
+    flex: center;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    font-size: 50px;
-    margin: 0px;
+    font-size: 30px;
 }
 
 .title span {
-    transition: ease-in;
     transition-duration: 0.3s;
     text-decoration: underline;
     text-decoration-color: transparent;
 }
+
 .title span:hover {
-    text-decoration-color: #F9F871;
     color: #F9F871;
+    text-decoration-color: #F9F871;
 }
 
-.content {
+.title-transition {
     display: flex;
-    flex: center;
-    flex-direction: column;
     width: 100%;
 }
 
-.content-explanation {
-    display: flex;
-    flex: center;
-    flex-direction: column;
+.connections-explanation {
+    background-color: #F9F871;
+    width: 50%;
 }
 
-.content-explanation-title {
+.connections-title {
     display: flex;
     flex: center;
     justify-content: center;
-    font-size: 30px;
-}
-
-.content-explanation-p {
-    display: flex;
-    flex: center;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
-    font-size: 35px;
-    font-weight: regular;
-}
-
-.content-explanation-p span {
-    transition-duration: 0.3s;
-}
-
-.content-explanation-p span:hover {
-    color: #bf7ff7;
-    text-shadow: 0 0 7px #8e4ec6;
-    text-decoration: underline;
-    text-decoration-color: #a751f2;
-    font-weight: 500;
-}
-
-.content-participants {
-    display: flex;
-    flex: center;
-    flex-direction: column;
-    width: 100%;
-}
-
-.content-participants-title {
-    text-align: center;
-    font-size: 30px;
-    margin-bottom: 0px;
-}
-
-.content-participants-content {
-    text-align: center;
-    font-size: 35px;
-    font-weight: regular;
-    margin-bottom: 50px;
-}
-
-.tables {
-    display: flex;
-    flex: center;
-}
-
-.tables-separator-rect-left {
-    height: 500px;
-    width: 550px;
-    background-color: white;
-}
-
-.tables-separator-triangle {
-    width: 0px;
-    height: 0px;
-    border-left: 0px solid transparent;
-    border-right: 100px solid transparent;
-    border-bottom: 500px solid white;
-}
-
-.tables-schedule {
-    display: flex;
-    flex: center;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
+    font-size: 25px;
     color: #1b1b1b;
 }
 
-.tables-schedule table {
+.connections-content {
     display: flex;
     flex: center;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.tables-schedule tr, td {
-    height: 100px;
-    width: 200px;
-    border: 1px solid;
-    border-collapse: collapse;
-}
-
-.tables-separator-rect-right {
-    display: flex;
-    flex: center;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 600px;
-    height: 500px;
-}
-
-/*
-.register {
-    display: flex;
-    flex: center;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;   
-    margin: 75px;
-}
-
-.register-button button {
-    font-size: 25px;
-    background-color: #fcfca0;
-    height: 100px;
-    width: 200px;
-    border: none;
-    border-radius: 10px;
-    transition-duration: 0.3s;
-}
-
-.register-button button:hover {
-    background-color: #ffff5b;
-}
-*/
-
-footer {
-    margin: 0px;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: rgb(14, 13, 13);
-}
-
-.footer-title {
-    display: flex;
-    flex: center;
-    justify-content: center;
-    font-size: 30px;
-}
-
-.footer-content {
-    display: flex;
-    flex: right;
-    flex-direction: column;
-    padding-left: 40px;
-    padding-bottom: 40px;
+    justify-content: left;
     font-size: 20px;
+    color: #1b1b1b;
+}
+
+.animated-circles {
+    display: flex;
+    justify-content: right;
+    background-color: #F9F871;
 }
