@@ -1,84 +1,87 @@
 body {
     margin: 0;
     padding: 0;
-    background: #1b1b1b;
+    background: #1B1B1B;
     color: white;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-a {
-    text-decoration: none;
-}
-
-
 .nav-bar {
     display: flex;
-    flex: right;
     justify-content: right;
-    align-items: center;
     gap: 30px;
     padding: 30px;
 }
 
 .nav-bar a {
-    font-size: 20px;
-    font-weight: 600;
+    text-decoration: none;
     color: white;
+    font-size: 25px;
+    font-weight: 550;
 }
 
 .nav-bar a:hover {
-    transition-duration: 0.3s;
+    transition-duration: 0.3;
     color: #F9F871;
 }
 
-.title {
+@keyframes title-hover-yellow {
+    0% {
+        color: white;
+        text-decoration: underline;
+        text-decoration-color: transparent;
+    }
+
+    100% {
+        color: #F9F871;
+        text-decoration: underline;
+        text-decoration-color: #F9F871;
+    }
+}
+
+.title-container {
     display: flex;
-    flex: center;
-    justify-content: center;
     align-items: center;
-    width: 100%;
-    font-size: 30px;
+    width: 25%;
+    height: 500px;
+    padding-left: 50px;
+    font-size: 50px;
 }
 
-.title span {
-    transition-duration: 0.3s;
-    text-decoration: underline;
-    text-decoration-color: transparent;
-}
-
-.title span:hover {
+.title-container span {
+    animation: title-hover-yellow 2s 0s;
     color: #F9F871;
+    text-decoration: underline;
     text-decoration-color: #F9F871;
 }
 
 .title-transition {
-    display: flex;
-    width: 100%;
-}
-
-.connections-explanation {
-    background-color: #F9F871;
-    width: 50%;
-}
-
-.connections-title {
-    display: flex;
-    flex: center;
-    justify-content: center;
-    font-size: 25px;
-    color: #1b1b1b;
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-image: url(images/test.svg);
+    background-size: 100px 100px;
 }
 
 .connections-content {
     display: flex;
-    flex: center;
-    justify-content: left;
-    font-size: 20px;
-    color: #1b1b1b;
+    flex-direction: column;
+    width: 50%;
+    height: 400px;
 }
 
-.animated-circles {
+.connections-title {
     display: flex;
-    justify-content: right;
-    background-color: #F9F871;
+    width: 100%;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.connections-explanation {
+    display: flex;
+    flex: center;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
 }
