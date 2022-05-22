@@ -45,11 +45,12 @@ body {
     width: 25%;
     height: 500px;
     padding-left: 50px;
+    padding-bottom: 10px;
     font-size: 50px;
 }
 
 .title-container span {
-    animation: title-hover-yellow 2.5s 0s;
+    animation: title-hover-yellow 2.8s 0s;
     color: #F9F871;
     text-decoration: underline;
     text-decoration-color: #F9F871;
@@ -72,13 +73,36 @@ body {
 .innovation-container {
     display: flex;
     width: 100%;
-    height: 600px;
+    height: 500px;
+    margin-bottom: 100px;
     background-color: #F9F871;
+}
+
+.innovation-start-transition {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    margin-top: 50px;
+}
+
+.innovation-start-transition svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 93px;
+}
+
+.innovation-start-transition .shape-fill {
+    fill: #F9F871;
 }
 
 .innovation-image {
     display: flex;
     justify-content: center;
+    width: 45%;
     animation: innovation-image-hover infinite 1s ease-in-out 2s;
 }
 
@@ -86,6 +110,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: right;
+    text-align: center;
+    padding-top: 70px;
     width: 50%;
     color: #1b1b1b;
 }
@@ -105,15 +131,38 @@ body {
     font-size: 20px;
 }
 
+.innovation-end-transition {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    margin-top: 1102px;
+}
+
+.innovation-end-transition svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 93px;
+}
+
+.innovation-end-transition .shape-fill {
+    fill: #F9F871;
+}
+
 .connections-container {
     display: flex;
     width: 100%;
-    height: 600px;
+    height: 500px;
 }
 
 .connections-content {
     display: flex;
     flex-direction: column;
+    padding-top: 70px;
+    padding-left: 10px;
     width: 50%;
     height: 500px;
 }
@@ -136,12 +185,15 @@ body {
 
 .animated-circles {
     display: flex;
-    width: 50%;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
     height: 500px;
 }
 
 .community-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     width: 100%;
     background-color: #F9F871;
@@ -150,7 +202,9 @@ body {
 .community-content {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
     color: #1b1b1b;
 }
 
@@ -167,4 +221,10 @@ body {
     justify-content: center;
     width: 100%;
     font-size: 20px;
+}
+
+.community-image {
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
