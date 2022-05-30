@@ -42,16 +42,18 @@ body {
 
 .title-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 500px;
     width: 100%;
-    font-size: 60px;
 }
 
 .title {
+    display: flex;
+    flex-direction: row;
     margin-top: -150px;
+    font-size: 60px;
 }
 
 .title-container span {
@@ -59,6 +61,15 @@ body {
     color: #F9F871;
     text-decoration: underline;
     text-decoration-color: #F9F871;
+}
+
+.title-description {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 25px;
+    font-weight: 550;
+    margin-top: -50px;
 }
 
 @keyframes innovation-image-hover {
@@ -264,7 +275,7 @@ body {
     width: 100%;
     overflow: hidden;
     line-height: 0;
-    margin-top: 2400px;
+    margin-top: 2375px;
 }
 
 .community-end-transition svg {
