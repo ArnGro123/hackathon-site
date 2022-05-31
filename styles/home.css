@@ -7,17 +7,12 @@ body {
 }
 
 .nav-bar {
-    display: flex;
-    justify-content: right;
-    gap: 30px;
-    padding: 30px;
-    margin-right: 10px;
+    gap: 3vw;
 }
 
 .nav-bar a {
     text-decoration: none;
     color: white;
-    font-size: 3vw;
     font-weight: 550;
 }
 
@@ -40,23 +35,7 @@ body {
     }
 }
 
-.title-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 500px;
-    width: 100%;
-}
-
-.title {
-    display: flex;
-    flex-direction: row;
-    margin-top: -10%;
-    font-size: 4vw;
-}
-
-.title-container span {
+.main-title span {
     animation: title-hover-yellow 2.8s 0s;
     color: #F9F871;
     text-decoration: underline;
@@ -67,23 +46,22 @@ body {
     display: flex;
     justify-content: center;
     width: 100%;
-    font-size: 2vw;
     font-weight: 550;
-    margin-top: -5%;
 }
 
-@keyframes innovation-image-hover {
-    0% {
-        margin-top: 0px;
-    }
+.title {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 30px;
+    font-weight: 600; 
+}
 
-    50% {
-        margin-top: 10px;
-    }
-
-    100% {
-        margin-top: 0px;
-    }
+.explanation {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 20px;
 }
 
 .innovation-container {
@@ -101,7 +79,7 @@ body {
     width: 100%;
     overflow: hidden;
     line-height: 0;  
-    margin-bottom: -10px;
+    margin-bottom: 67%;
 }
 
 .innovation-start-transition svg {
@@ -118,7 +96,7 @@ body {
 .innovation-image {
     display: flex;
     justify-content: center;
-    width: 10%;
+    max-width: 10%;
     animation: innovation-image-hover infinite 1s ease-in-out 2s;
     margin-left: 15%;
     margin-right: 10%;
@@ -133,21 +111,6 @@ body {
     margin-left: 5%;
     width: 50%;
     color: #1b1b1b;
-}
-
-.innovation-title {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    font-size: 30px;
-    font-weight: 600;
-}
-
-.innovation-explanation {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    font-size: 20px;
 }
 
 .innovation-end-transition {
@@ -184,22 +147,6 @@ body {
     padding-left: 10px;
     width: 50%;
     height: 500px;
-}
-
-.connections-title {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    font-size: 30px;
-    font-weight: 600;
-}
-
-.connections-explanation {
-    display: flex;
-    flex: center;
-    width: 100%;
-    text-align: center;
-    font-size: 20px;
 }
 
 .animated-circles {
@@ -248,27 +195,6 @@ body {
     text-align: center;
     width: 100%;
     color: #1b1b1b;
-}
-
-.community-title {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    font-size: 30px;
-    font-weight: 600;
-}
-
-.community-explanation {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    font-size: 20px;
-}
-
-.community-image {
-    display: flex;
-    justify-content: center;
-    width: 100%;
 }
 
 .community-end-transition {
@@ -392,4 +318,158 @@ body {
     font-size: 20px;
     font-weight: 500;
     padding-left: 20px;
+}
+
+@media screen and (max-width: 320px) {
+    .nav-bar {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .nav-bar-a {
+        font-size: 30px;
+    }
+    .main-title {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-left: 1%;
+        font-size: 30px;
+    }
+    .title-description {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        font-size: 10px;
+        margin-top: -20px;
+    }
+    .innovation-start-transition {
+        margin-bottom: 150px;
+    }
+    .innovation-container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 28%;
+        height: 150%;
+    }
+    .innovation-image {
+        margin-left: 45%;
+    }
+    .innovation-content {
+        margin-bottom: 10%;
+        margin-left: 25%;
+    }
+    .innovation-end-transition {
+        margin-top: 354.5%;
+    }
+    .connections-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .connections-content {
+        margin-left: 25%;
+    }
+    .animated-circles {
+        margin-left: 25%;
+    }
+    .community-container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 100%;
+    }
+    .community-start-transition {
+        margin-bottom: -420%;
+    }
+    .community-image {
+        width: 1%;
+    }
+    .community-end-transition {
+        margin-top: 795%;
+    }
+    .prizes-title {
+        margin-left: 20%;
+    }
+    .prizes-note {
+        margin-left: 10%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .nav-bar {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .nav-bar-a {
+        font-size: 30px;
+    }
+    .main-title {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-left: 10%;
+        font-size: 30px;
+    }
+    .title-description {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        font-size: 20px;
+        margin-top: -20px;
+    }
+    .innovation-start-transition {
+        margin-bottom: 150px;
+    }
+    .innovation-container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 28%;
+        height: 150%;
+    }
+    .innovation-image {
+        margin-left: 45%;
+    }
+    .innovation-content {
+        margin-bottom: 10%;
+        margin-left: 25%;
+    }
+    .innovation-end-transition {
+        margin-top: 354.5%;
+    }
+    .connections-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .connections-content {
+        margin-left: 25%;
+    }
+    .animated-circles {
+        margin-left: 25%;
+    }
+    .community-container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 100%;
+    }
+    .community-start-transition {
+        margin-bottom: -420%;
+    }
+    .community-image {
+        width: 1%;
+    }
+    .community-end-transition {
+        margin-top: 795%;
+    }
+    .prizes-title {
+        margin-left: 20%;
+    }
+    .prizes-note {
+        margin-left: 10%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .main-title {
+        font-size: 50px;
+    }
 }
